@@ -1,7 +1,7 @@
 * { 
 	margin: 0px;  
 	padding: 0px;
-} /* The main reason this is used is because sometimes the browser will apply it's default margin/padding to elements, and in a case where you do not want there to be any margin or padding space around an element you will want to define that there is no margin or padding.  */
+} /* Universal Selector- Zeros out margins/padding. The main reason this is used is because sometimes the browser will apply it's default margin/padding to elements, and in a case where you do not want there to be any margin or padding space around an element you will want to define that there is no margin or padding.  */
 
 body {
 	text-align: center;
@@ -10,6 +10,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5em;
 	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
 }
 
 #container {
@@ -26,11 +27,16 @@ body {
 	text-indent: -9999px;
 	height: 140px;
 	width: 1000px;
-	background: url('../img/anthonylin-newimage2.jpg') no-repeat top left;
 }
 
 #header h1 a {
+	background-image:url("../img/anthonylin-newimage2.jpg");
 	color: white;
+	display: block;
+	height: 140px;
+	width:800px;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 #nav {
@@ -97,6 +103,7 @@ body {
 	border: 5px solid rgb(247, 160, 255);
 	float: right;
 	margin: 30px 35px;
+	padding: 5px;
 }
 
 #content ul li a:hover{
@@ -107,17 +114,21 @@ body {
 	background-color: aquamarine;
 }
 
-h2 {
+#content h2 {
 	color: blueviolet
 }
 
-h3 {
+#content h3 {
 	color: pink
 }
 
-h4 {
+#content h4 {
 	margin-top: 30px;
 	margin-bottom: 15px;
 	color: chocolate;
 	font-size: 5mm;
+}
+
+#footer h6 a:hover {
+	color: #ff0000;
 }

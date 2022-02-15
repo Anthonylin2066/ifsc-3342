@@ -1,0 +1,31 @@
+/* ----- Utility ---- */
+p {
+    width:80vw;
+    margin:0 auto;
+    max-width:900px;
+    padding-bottom:25px;
+  }
+  
+h2 {
+    text-align:center;
+    border-bottom:2.5px solid #407396;
+  }
+
+/*---- Styles ----*/
+h2 {
+    text-align:left;
+    border-bottom:3.5px solid #407396;
+    width:320px;
+  }
+
+h1 {
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-size:2em;
+    background-color:#407396;
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    margin:-8px -8px;
+}

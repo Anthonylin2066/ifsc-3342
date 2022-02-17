@@ -29,3 +29,42 @@ h1 {
     padding-left:40px;
     margin:-8px -8px;
 }
+
+/*media queries*/
+
+@media screen and (max-width:800px){
+  .nav-item{
+    float:none;
+    width:100%;
+    color: blue;
+    text-decoration:underline;
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media screen and (max-width:600px){
+  .nav-item{
+    float:none;
+    width:100%;
+    color: rgb(255, 239, 19);
+    text-decoration:underline;
+    text-align: center;
+    background-color: rgb(0, 204, 255);
+  }
+}
+
+@media screen and (max-width:600px){
+    h2{
+    float:none;
+    margin-top:25px;
+    width:100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:850px) and (min-width:810px) {
+   header.primary {
+   text-decoration:underline;
+   text-decoration-color: blueviolet;
+ }
+}

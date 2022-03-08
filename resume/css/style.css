@@ -28,7 +28,202 @@
     max-width:100%;
     height:auto;
   }
+
+  nav.primary {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding:25px 30px 20px 30px;
+    background-color: #f6f6f4;
+    max-width:800px;
+    margin: 0 auto;
+  }
   
+  nav a:link,
+  nav a:visited {
+    padding: 30px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: background-color 0.5s ease;
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+}
+
+nav a:hover {
+  background: #EEEEEE;
+  color: #b0c4de;
+}
+
+main {
+  padding: 1px 20px;
+  background-color: #f6f6f4;
+}
+
+#elon{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-variant: small-caps;
+  margin-top:5px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  background-color: #EEEEEE;
+}
+
+h3.aboutme{
+  color:rgb(99, 99, 99);
+  text-align: center;
+}
+
+
+a:hover {
+  color: #8d9db2
+}
+
+
+a{
+  text-decoration: none;
+  color:#b0c4de;
+  display: inline-block;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-4 {
+  position: relative;
+  color: rgb(173, 87, 87);
+  z-index: 2;
+  line-height: 40px;
+  padding: 0;
+}
+.btn-4:hover{
+  border: none;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  top: 0;
+   left: 0;
+   border-bottom-color: transparent;
+   border-right-color: transparent;
+   border-top-color: #000;
+   border-left-color: #000;
+}
+.btn-4:after{
+   bottom: 0;
+   right: 0;
+   border-top-color: transparent;
+   border-left-color: transparent;
+   border-bottom-color: #000;
+   border-right-color: #000;
+}
+.btn-4:hover:before,
+.btn-4:hover:after {
+  border-color: #000;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+dl{
+  display: grid;
+  padding-left:50px;
+  padding-right:50px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  /* Shorthand */
+  grid-template: auto / 1fr 2fr;
+  background-color: #EEEEEE;
+}
+
+dt{
+  font-weight: 800;
+  grid-column: 1;
+  padding: 10px 0;
+  border-bottom: 3px solid #EEEEEE;
+  margin-right:10px;
+}
+
+dd{
+  margin: 0;
+  grid-column: 2;
+  padding: 10px 0;
+  border-bottom:  1px solid #999;
+}
+
+h2 {
+  border-bottom: 1px solid #999;
+  left: 100px;
+  margin-top: 50px; 
+  margin-bottom: 30px;
+}
+
+/* ------ Typography -------*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prata', serif;
+ }
+
+/* ------ Design Time Styles -------*/
+ .container{
+  max-width:800px;
+  margin: 0 auto;
+}
+
+/* ------ Fluid Images -------*/
+img {
+  max-width:100%;
+  height:auto;
+}
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301

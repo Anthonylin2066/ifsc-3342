@@ -15,6 +15,7 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="navbut" >
     <!-- Main navigation -->
     <nav class="primary">
       <a href="#about">About</a>
@@ -34,32 +35,33 @@
     </nav>
   </header>
   <!-- Main -->
-  <main itemscope itemtype="http://schema.org/Person">
+  <main itemscope itemtype="http://schema.org/Person" class="container">
     <h1>Anthony Lin</h1>
     <section id="about">
-      <h2>Personal details</h2>
-      <img itemprop="image" src="http://www.fillmurray.com/400/400" alt="Your Name">
-      <p itemprop="description">Statement of Intent</p>
+      <h3 class="aboutme" >Web Design and Development // UA Little Rock</h3>
+      <h2 class="visually-hidden">Personal details</h2>
+      <img id="elon" src="img/elooonnn.jpeg" alt="Your Name">
+      <p class="visually-hidden" itemprop="description">Statement of Intent</p>
       <dl>
-        <dt>Anthony Lin</dt>
+        <dt>Name |</dt>
         <dd itemprop="name">
           <span itemprop="givenName">Anthony</span> <span itemprop="familyName">Lin</span>
         </dd>
-        <dt>Date of birth</dt>
+        <dt>Date of birth |</dt>
         <dd itemprop="birthDate"><time datetime="1976-10-12">April 22, 2002</time></dd>
-        <dt>Nationality</dt>
+        <dt>Nationality |</dt>
         <dd itemprop="nationality">Asian American</dd>
-        <dt>Location</dt>
+        <dt>Location |</dt>
         <dd itemprop="homeLocation">Little Rock, Arkansas</dd>
-        <dt>Telephone</dt>
+        <dt>Telephone |</dt>
         <dd>
           <a itemprop="telephone" href="tel:555.555.5555">501-596-1338</a>
         </dd>
-        <dt>Email</dt>
+        <dt>Email |</dt>
         <dd>
           <a itemprop="email" href="mailto:email@mail.com">anthonylin333@gmail.com</a>
         </dd>
-        <dt>Address</dt>
+        <dt>Address |</dt>
 
         <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <span itemprop="streetAddress">2801 South University</span>
@@ -69,11 +71,22 @@
         </dd>
 
       </dl>
-      <ul class="related-links">
-        <li><a itemprop="url" rel="me" href="https://github.com/Anthonylin2066" target="_blank">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/anthonylin87260920a" target="_blank">Anthony Lin</a></li>
-        <li><a itemprop="url" href="resume.pdf" download>N/A</a></li>
-      </ul>
+
+      <h2>Socials</h2>
+      <div class="frame">
+        <a href="https://github.com/Anthonylin2066" class="custom-btn btn-4" target="_blank">Github</a>
+      </div>
+      <div class="frame">
+        <a href="https://www.linkedin.com/in/anthonylin87260920a" class="custom-btn btn-4" target="_blank">Linkedin</a>
+      </div>
+      <div class="frame">
+        <a href="resume.pdf" class="custom-btn btn-4" target="_blank">Resume(N/A)</a>
+      </div>
+        <!--
+        <a href="https://www.linkedin.com/in/anthonylin87260920a" class="btn" target="_blank">Linkedin</a>
+        <a href="resume.pdf" class="btn" download>N/A</a>
+        -->
+
     </section>
     <section id="skills">
       <h2>Skills</h2>
@@ -90,9 +103,9 @@
       <article class="job">
         <h3 itemprop="jobTitle">Sushi Chef</h3>
         <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Pho and More</span>
+          <span itemprop="name">Pho and More:</span>
           <span>July 2018 - Present</span>
-          <p itemprop="description">Started working as a part-time dishwasher and kitchen assistant in 2018. During this time I learned essential kitchen skills such as knife skills, prepping, and making sauces. Later on, I went through training and made my transition as a sushi chef in 2019.</p>
+          <p itemprop="description">Started working as a part-time dishwasher and kitchen assistant in 2018. During this time I learned essential kitchen skills such as knife handling, prepping, and making sauces. Later on, I went through training and made my transition as a sushi chef in 2019.</p>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
           <a itemprop="url" href="http://link-to-company.com">Company URL</a>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -105,8 +118,8 @@
     <section id="education">
       <h2>Education</h2>
       <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="High School Diploma">Rank 2</abbr> High School Graduate at Jacksonville Lighthouse Charter School</h3>
-        <h3 itemprop="description"><abbr title="Ateending College">Student</abbr> at University of Arkansas at Little Rock</h3>
+        <p itemprop="description">- Rank 2 High School Graduate at Jacksonville Lighthouse Charter School</p>
+        <p itemprop="description">- Web Design and Development student at University of Arkansas at Little Rock</p>
           <span itemprop="name">University of Arkansas at Little Rock</span>
           <span itemprop="location" itemscope>2801 S University Ave, Little Rock, AR 72204</span>
           <span>2020-Present</span>
@@ -116,7 +129,7 @@
   <!-- Footer -->
   <footer>
     <div id="copyright">
-      &copy; company. All rights reserved.
+      &copy; Anthony Lin. All rights reserved.
     </div>
   </footer>
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>

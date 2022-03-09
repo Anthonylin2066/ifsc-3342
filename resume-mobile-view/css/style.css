@@ -104,7 +104,7 @@ a{
 }
 
 button {
-  margin: 20px;
+  margin: 50px;
   outline: none;
 }
 
@@ -112,6 +112,7 @@ button {
   width: 130px;
   height: 40px;
   padding: 10px 25px;
+  margin-left: 50px;
   border: 2px solid #000;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
@@ -127,8 +128,10 @@ button {
   color: rgb(173, 87, 87);
   z-index: 2;
   line-height: 40px;
-  padding: 0;
+  padding: 0px;
+  margin-right: 10px;
 }
+
 .btn-4:hover{
   border: none;
 }
@@ -202,6 +205,94 @@ h2 {
   margin-bottom: 30px;
 }
 
+/*for grid*/
+.page-title{
+  grid-area: title;
+}
+#about{
+  grid-area: about;
+}
+#skills{
+  grid-area: skills;
+
+}
+#experience{
+  grid-area: experience;
+}
+#education{
+  grid-area: education;
+}
+
+main {
+  display:grid;
+  grid-gap:.5em;
+  grid-template-areas:
+    "title"
+    "about"
+    "skills"
+    "experience"
+    "education";
+}
+
+/*media queries*/
+@media screen and (min-width:768px){
+  
+  .container{max-width:900px;}
+  main.container {
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ". education";
+  }
+
+/*
+  #about{
+    display:grid;
+    grid-gap:2em;
+    margin:auto;
+    grid-template-columns: 300px 3fr auto;
+    grid-template-areas:
+    "bio details details"
+    "related related related";
+  }
+*/
+
+.bio{
+  grid-area:bio;
+}
+.details{
+  grid-area:details;
+}
+.related-links{
+  grid-area:related;
+  border-bottom:1px solid #999;
+  padding-bottom:50px
+}
+
+}
+
+/*----------------------Edge Case Tweaks-----------------------*/
+
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+}
+
+@media only screen and (max-width: 395px) {
+.related-links{
+flex-direction:column;
+
+}
+.related-links a{
+display:block;
+  }  
+}
+
+
+
+
+
 /* ------ Typography -------*/
 body {
   font-family: 'Lato', sans-serif;
@@ -223,6 +314,8 @@ img {
   max-width:100%;
   height:auto;
 }
+
+
 
   /*
    * Remove text-shadow in selection highlight:

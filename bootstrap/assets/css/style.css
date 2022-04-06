@@ -1,0 +1,37 @@
+header, #content, aside, footer {
+    height:25vh;   
+}
+
+nav {
+    background-color: #9000ff;
+}
+
+header, footer {
+    background:lightgray;
+}
+
+#content {
+    background:lightblue;
+}
+
+aside {
+    background:lightgreen;
+}
+
+article {
+    background-color: lightgoldenrodyellow;
+    height:25vh;
+}
+
+h1 {
+    margin:auto;
+    text-align:center;
+    background-color: white;
+    margin-top: 70px;
+}
+
+#content2, #content3 {
+    height:70vh;
+    background:lightblue;
+}
+

@@ -1,0 +1,30 @@
+<link href="style.css" rel="stylesheet">
+
+<!--Using SRCSET-->
+<img src="assets/img/1920x1080_px_digital_art_fantasy_Art_landscape_Long_Hair_ryky_Trees_wind-1314651.jpg" 
+srcset="assets/img/1920x1080_px_digital_art_fantasy_Art_landscape_Long_Hair_ryky_Trees_wind-1314651.jpg 1000w, 
+    assets/img/1920x1080_px_digital_art_fantasy_Art_landscape_Long_Hair_ryky_Trees_wind-1314651.jpg 2000w,
+    assets/img/1920x1080_px_digital_art_fantasy_Art_landscape_Long_Hair_ryky_Trees_wind-1314651.jpg 1000w,
+    assets/img/1920x1080_px_digital_art_fantasy_Art_landscape_Long_Hair_ryky_Trees_wind-1314651.jpg 600w,
+    assets/img/1920x1080_px_digital_art_fantasy_Art_landscape_Long_Hair_ryky_Trees_wind-1314651.jpg 400w"
+alt="Jupiter" class="center">
+
+<!--Using Picture Element-->
+<picture>
+    <source media="(max-width: 480px)"
+            srcset="assets/img/ddd.PNG">
+  
+    <source media="(max-width: 1460px)"
+            srcset="assets/img/elooonnn.jpeg">
+  
+    <img src="assets/img/ddd.PNG"
+        alt="food tree">
+  </picture>
+
+  <!--Using Picturefill (Polyfill)-->
+<picture>
+    <source srcset="assets/img/thumb-1920-1085635.jpg" media="(min-width: 1020px)">
+    <source srcset="assets/img/2040735.jpg" media="(min-width: 720px)">
+    <source srcset="assets/img/Sunset-900x600.jpeg" media="(min-width: 600px)">
+    <img srcset="assets/img/wp4511654.jpg" alt="…"> 
+</picture>

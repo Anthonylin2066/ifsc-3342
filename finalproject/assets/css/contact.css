@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #7086A8;
+  height:6vw;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*Nav Bar Styles*/
+.logo {
+  float: left;
+  padding: 20px 0px 0px 0px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 35px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*First page (Intro Styles)*/
+.contact {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #e6e6e6;
+}
+
+.intro {
+  width: 50%;
+  float: left;
+}
+
+.intro p{
+  font-family: 'Montserrat', sans-serif;
+  color:#7F8081;
+  margin-left: 20%;
+  margin-top:2%;
+}
+
+/*Contact info content*/
+.contact {
+  text-align: center;
+}
+
+h1, h5 {
+  text-align: center;
+}
+
+h1{
+  padding-top: 40px;
+}
+
+h5{
+  color: #686868;
+  padding-bottom: 40x;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 650px;
+  min-height: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styled-table thead tr {
+  background-color: #7086A8;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #7086A8;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #7086A8;
+}
+
+.styled-table tbody tr.active-row a {
+  font-weight: bold;
+  color: #7086A8;
+  text-decoration:none;
+}
+
+.styled-table tbody tr.active-row a:hover{
+  font-weight: bold;
+  color: #7086A8;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+
+

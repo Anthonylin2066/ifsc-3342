@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Raleway:ital,wght@0,400;1,300&display=swap');
+
 body {
 	margin: 0;
 	background: #222;
@@ -20,6 +23,10 @@ header::after {
   content: '';
   display: table;
   clear: both;
+}
+
+.hedd {
+  margin-bottom:100px;
 }
 
 /*Nav Bar Styles*/
@@ -239,6 +246,14 @@ section#content{
     background-color: #e6e6e6;
   }
 
+  #arti2 {
+    background-color: #e6e6e6;
+  }
+
+  #arti3 {
+    background-color: #e6e6e6;
+  }
+
  .post p {
    margin-top: 30px;
  }
@@ -246,5 +261,90 @@ section#content{
  .post2 p {
   margin-top: 100px;
 }
+.color {
+  background-color: #e6e6e6;
+}
 
-/* Media Queries */
+
+
+
+/* ---------------Media Queries----------------- */
+
+ /*Media Queries*/
+ @media screen and (max-width: 480px){
+
+  nav ul li{
+  width: 100%;
+  }
+
+  nav ul{
+  position: fixed;
+  top: 80px;
+  background: #768295;
+  height: 50vh;
+  width: 61%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  padding-right:0px;
+  }
+
+p {
+  padding-top: 150px;
+}
+
+h2 {
+  word-break: break-all;
+  
+}
+
+h1 {
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+header {
+  background: #7086A8;
+  height:20vw;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+  nav ul li{
+  width: 100%;
+  }
+
+  nav ul{
+  position: fixed;
+  top: 80px;
+  background: #768295;
+  height: 50vh;
+  width: 61%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  padding-right:0px;
+  }
+
+p {
+  padding-top: 150px;
+}
+
+h2 {
+  word-break: break-all;
+  
+}
+
+h1 {
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+header {
+  background: #7086A8;
+  height:20vw;
+}
+
+}

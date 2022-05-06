@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Raleway:ital,wght@0,400;1,300&display=swap');
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none!important;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Raleway:ital,wght@0,400;1,300&display=swap');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 }
 
 body {
@@ -25,8 +37,8 @@ header::after {
   clear: both;
 }
 
-/*Nav Bar Styles and Media Queries*/
-nav{
+/*Nav Bar Styles*/
+nav {
   display: flex;
   height: 80px;
   width: 100%;
@@ -76,6 +88,8 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
+
+/*media stuff*/
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
@@ -85,6 +99,8 @@ input[type="checkbox"]{
   nav .menu-btn i{
     display: block;
   }
+
+
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
@@ -99,8 +115,8 @@ input[type="checkbox"]{
     display: block;
     transition: all 0.3s ease;
     padding-right:-800px;
-
   }
+
   #click:checked ~ ul{
     left: 0;
   }
@@ -152,6 +168,7 @@ input[type="checkbox"]{
   margin-top:2%;
 }
 
+
 .devicesimg {
   width: 40%;
   float: right;
@@ -162,7 +179,32 @@ input[type="checkbox"]{
   margin-top: 25%;
   margin-left: -15%;
 }
+/*learn more button*/
+.banner ul{
+  list-style-type: none;
+  margin-left: 15%;
+  margin-top: 6%;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+  min-height: 48px;
+  line-height: 1.29;
+  color: #fff;
+  font-weight: 400;
+}
 
+.banner ul li a{
+  color: #fff;
+  padding:15px 30px;
+  background-color: #7086A8;
+}
+.banner ul li a:hover  {
+  background-color: #596b84;
+}
 
 /*first page*/
 
@@ -204,11 +246,89 @@ input[type="checkbox"]{
   margin-top: 50%;
 }
 
-.intro h3 {
-  margin-top: 30%;
+.content h3 {
+  margin-top: 10%;
+  margin-bottom:-8%;
+}
+
+.content h4 {
+  margin-top: 2%;
 }
 
 .content h2 {
-  margin-top: 40px;
+  margin-top: 7%;
+}
+
+.content .ooo{
+  margin-bottom:-40px;
+  margin-top:40px;
+}
+
+
+
+.color {
+  background-color: #BDC9DF;
+}
+
+.imim {
+  margin-bottom:100px;
+}
+
+h4 {
+  padding-top:30px;
+}
+
+h2 {
+  padding-top:50px;
+}
+
+.vid{
+  margin-bottom:-10px;
+}
+
+.hedee{
+  margin-top:133px;
+}
+
+  /*Media Queries*/
+  @media screen and (max-width: 480px){
+    img {
+         width: 85%;
+         height:50%;
+    }
+
+    .container .post {
+      padding-top:300px;
+    }
+
+    .devicesimg .devices {
+      width:0px;
+    }
+
+    .content iframe{
+      width: 90%;
+    }
+
+   nav ul li{
+    width: 100%;
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    background: #768295;
+    height: 50vh;
+    width: 61%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    padding-right:0px;
+  }
+  
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+  }
 }
 
